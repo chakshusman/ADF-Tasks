@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "moviesDB.csv",
-				"fileSystem": "chaksc1new"
+				"fileSystem": "input-data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
