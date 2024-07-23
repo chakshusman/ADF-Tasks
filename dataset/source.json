@@ -2,16 +2,16 @@
 	"name": "source",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_blob",
+			"referenceName": "link_service_gen2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"fileName": "salary-data.csv",
-				"container": "chaksc1"
+				"type": "AzureBlobFSLocation",
+				"fileName": "moviesDB.csv",
+				"fileSystem": "chaksc1new"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
