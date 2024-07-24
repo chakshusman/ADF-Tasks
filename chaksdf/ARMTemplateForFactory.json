@@ -254,7 +254,7 @@
 					"sinks": [
 						{
 							"dataset": {
-								"referenceName": "sink",
+								"referenceName": "chakssqltable",
 								"type": "DatasetReference"
 							},
 							"name": "sink1"
@@ -285,17 +285,24 @@
 						"     Rating = avg(toInteger(Rating))) ~> aggregate1",
 						"aggregate1 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
-						"     umask: 0022,",
-						"     preCommands: [],",
-						"     postCommands: [],",
+						"     input(",
+						"          year as string,",
+						"          Rating as string",
+						"     ),",
+						"     deletable:false,",
+						"     insertable:true,",
+						"     updateable:false,",
+						"     upsertable:false,",
+						"     format: 'table',",
 						"     skipDuplicateMapInputs: true,",
-						"     skipDuplicateMapOutputs: true) ~> sink1"
+						"     skipDuplicateMapOutputs: true,",
+						"     errorHandlingOption: 'stopOnFirstError') ~> sink1"
 					]
 				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/src')]",
-				"[concat(variables('factoryId'), '/datasets/sink')]"
+				"[concat(variables('factoryId'), '/datasets/chakssqltable')]"
 			]
 		}
 	]
