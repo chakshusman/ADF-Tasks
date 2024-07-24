@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "chaksdf"
 		},
+		"chaksazuresqlls_connectionString": {
+			"value": ""
+		},
 		"dest_accountKey": {
 			"value": ""
 		},

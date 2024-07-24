@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "chaksdf"
 		},
+		"chaksazuresqlls_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'chaksazuresqlls'"
+		},
 		"dest_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'dest'"
@@ -49,6 +53,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"chaksazuresqlls_connectionString": {
+						"value": "[parameters('chaksazuresqlls_connectionString')]"
 					},
 					"dest_accountKey": {
 						"value": "[parameters('dest_accountKey')]"
