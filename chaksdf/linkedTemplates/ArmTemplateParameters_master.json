@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "chaksdf"
+		},
+		"dest_accountKey": {
+			"value": ""
+		},
+		"source_accountKey": {
+			"value": ""
+		},
+		"dest_properties_typeProperties_url": {
+			"value": "https://chakssa.dfs.core.windows.net/"
+		},
+		"source_properties_typeProperties_url": {
+			"value": "https://chakssa.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
