@@ -1,0 +1,9 @@
+{
+	"name": "chaks-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "06ae54cc-606a-44f6-ae69-31b6184e20e0",
+		"tenantId": "ce0db214-cf5e-4aa5-9781-bd8d3fa6c4c3"
+	}
+}
